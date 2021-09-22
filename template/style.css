@@ -11,13 +11,8 @@ body {
 
 /* Colors */
 header, .intro, footer {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
-                url(images/pexels-aleksandar-pasaric-2603464.jpg) no-repeat center center fixed;
-    background-size: cover; 
-    color: #f9faf8;
-    text-shadow:0px 0px 5px black,
-                0px 0px 20px black,
-                0px 0px 40px white; 
+    background-color: #1F2937;
+    color: #f9faf8;   
 }
 
 
@@ -47,7 +42,7 @@ header, .intro{
     font-size: 18px;
 }
 button {
-    background-color: #f7601b;
+    background-color: #3882f6;
     flex:0 1 auto;
     width:100px;
     height: 30px;
@@ -73,11 +68,11 @@ a {
     color: #f9faf8;
 }
 a:hover {
-    color: #f7601b;
+    color: #3882f6;
 }
 
 .intro{
-    height:100vh;
+    padding-bottom: 100px;
     gap:32px;
 }
 
@@ -94,32 +89,24 @@ a:hover {
     align-self: stretch;
     justify-content: center;
     align-items:center;
+    background-color: #e5e7eb;
     color:#1F2937;
     margin-top: 40px;
     margin-right: 15%;
     min-width:300px;
-    max-height:100%;
-    overflow: hidden;
-
 }
-
-img {
-    width:100%;
-}
-
 .main {
 
     display: flex;
     align-self: stretch;
     align-items: center;
     justify-content:space-between;
-    background-color: #1F2937;
-    color: #f9faf8;
+    background-color: #f9faf8;
+    color: #1F2937;
     flex-flow: column wrap;
 }
 .content {
     flex-wrap: wrap;
-    padding: 64px;
 }
 
 .content h2{
@@ -136,46 +123,24 @@ img {
     flex-flow: row wrap;
 }
 
-
-
 .card {
-    max-width: 150px;
-    color: #1f293700;
-    transition:ease-in .7s;
+    max-width: 150px; 
 }
 
-.card:hover {
-    color: #f9faf8;
-}
 .content-img {
     width:144px;
     height:144px;
-    /* border: 3px solid #f7601b; */
-    background-image: linear-gradient(180deg, #f7691b, rgba(0, 0, 0, 0));
+    border: 3px solid #3882f6;
     border-radius: 20px;
-    transition: ease 0.1s;
 }
 
-.content-img:hover {
-    transform:scale(1.05);
-}
 .quote {
-    padding:80px 35%;
-    background: url(images/pexels-aleksandar-pasaric-6560708.jpg) no-repeat center center fixed;
-    background-size: cover;
+    padding:32px 25%;
+    background-color: #e5e7eb;
     font-size: 36px;
     font-weight:lighter;
     font-style: italic;
-    color:#1F2937;
-    text-shadow: 0 0 5px #f9faf8,
-    0 0 15px #f9faf8,
-    0 0 30px #f9faf8;
 }
-
-.quote p{
-    mix-blend-mode:luminosity;
-}
-
 .author {
     display: flex;
     flex-direction: row-reverse;
@@ -189,7 +154,7 @@ img {
     align-items: center;
     gap:32px;
     padding:36px;
-    background-color: #f7601b;
+    background-color: #3882f6;
     border-radius: 5px;
     margin:100px auto;
     color: #f9faf8;
@@ -203,7 +168,7 @@ img {
 
 button:hover {
     background-color: #f9faf8;
-    color: #f7601b;
+    color: #3882f6;
 }
 
 .sign-up-section p {
@@ -227,29 +192,16 @@ footer {
 @media only screen and (max-width: 783px){
     .intro-text {
         margin-right: 15%;
-        align-items: center;
     }
     .image {
         margin-left: 15%;
         height: 200px;
     }
-    
-    .card {
-        color: #f9faf8;
-    }
 }
 
 
 @media only screen and (max-width: 561px){
-
-    .quote {
-        padding: 32px 25%;
+    header ul {
+        margin-right: 10%;
     }
-}
-
-@media only screen and (max-width: 346px){
-header ul {
-    margin-right: 10%;
-}
-   
 }
